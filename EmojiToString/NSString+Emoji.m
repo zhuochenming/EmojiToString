@@ -1692,7 +1692,8 @@ static NSDictionary *unicodeAndEmojiDic = nil;
                               @":whale2:" : @"🐋"
                               };
         
-//        key value逆转 上面的方法性能更好吧
+//        key value逆转 来自https://github.com/valeriomazzeo/NSString-Emoji 直接转换好性能更好吧
+        
 //                NSMutableDictionary *unicodeDic = [NSMutableDictionary dictionary];
 //                [unicodeToEmojiDic enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
 //                    if ([obj isKindOfClass:[NSArray class]]) {
